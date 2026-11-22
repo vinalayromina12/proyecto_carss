@@ -2,186 +2,229 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cars 1 - Universo Cars</title>
-
-<style>
-* { box-sizing: border-box; }
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #171717;
-    color: white;
-}
-
-header {
-    background: linear-gradient(135deg, #a90000, #ef2929);
-    text-align: center;
-    padding: 25px;
-}
-
-.logo {
-    width: 200px;
-    height: 110px;
-    object-fit: contain;
-}
-
-nav {
-    background: #080808;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    display: inline-block;
-    color: #ffd21c;
-    background: #292929;
-    padding: 12px 20px;
-    margin: 5px;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-nav a:hover, nav .activo {
-    background: #a90000;
-    color: white;
-}
-
-main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 25px;
-}
-
-h2 { color: #ffd21c; }
-
-.portada {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.contenido {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 25px;
-}
-
-.contenido img {
-    width: 350px;
-    max-width: 100%;
-    border-radius: 12px;
-}
-
-.texto {
-    flex: 1;
-    min-width: 250px;
-    line-height: 1.7;
-}
-
-.personajes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.tarjeta {
-    background: #292929;
-    padding: 18px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.tarjeta h3 { color: #ffd21c; }
-
-footer {
-    background: #080808;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars 1 | Universo Cars</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
 <header>
-    <img src="imagenes/logo-cars.jpeg" alt="Logo de Cars" class="logo">
-    <h1>Cars: Una aventura sobre ruedas</h1>
-    <p>La primera película de la saga</p>
+    <img src="imagenes/logo-cars.jpeg" alt="Logo de Cars">
+    <h1>CARS 1</h1>
+    <p>El comienzo de una gran aventura sobre ruedas</p>
 </header>
 
 <nav>
     <a href="index.html">Inicio</a>
-    <a href="cars1.html" class="activo">Cars 1</a>
+    <a href="cars1.html">Cars 1</a>
     <a href="cars2.html">Cars 2</a>
     <a href="cars3.html">Cars 3</a>
+    <a href="personajes.html">Personajes</a>
 </nav>
 
 <main>
 
-    <h2>Cars (2006)</h2>
+    <section>
+        <h2>La película que lo comenzó todo</h2>
 
-    <img src="imagenes/images.jpeg" alt="Cars primera película" class="portada">
+        <img class="portada" src="imagenes/images.jpeg" alt="Rayo McQueen en Cars 1">
 
-    <section class="contenido">
-        <img src="imagenes/cars1-sinopsis.jpeg" alt="Personajes de Cars">
-
-        <div class="texto">
-            <h2>Sinopsis</h2>
+        <div class="seccion">
             <p>
-                Rayo McQueen es un automóvil de carreras que sueña con
-                convertirse en el campeón de la Copa Pistón. Durante
-                un viaje termina accidentalmente en el pequeño pueblo
-                de Radiador Springs.
+                Cars es una película animada de Disney y Pixar estrenada
+                en 2006. Cuenta la historia de Rayo McQueen, un automóvil
+                de carreras que está decidido a convertirse en el campeón
+                de la Copa Pistón.
             </p>
+
             <p>
-                Allí conoce a nuevos amigos que le enseñan que la
-                amistad, la humildad y el trabajo en equipo son
-                más importantes que ganar una carrera.
+                Su vida cambia cuando, durante un viaje hacia California,
+                termina accidentalmente en Radiador Springs, un pequeño
+                pueblo que le enseñará importantes lecciones sobre
+                la amistad, la humildad y el valor de las personas.
             </p>
         </div>
     </section>
 
-    <h2>Personajes principales</h2>
+    <section>
+        <h2>Ficha técnica</h2>
 
-    <section class="personajes">
-        <article class="tarjeta">
-            <h3>Rayo McQueen</h3>
-            <p>Un auto de carreras rojo que quiere convertirse en campeón.</p>
-        </article>
+        <div class="tarjetas">
 
-        <article class="tarjeta">
-            <h3>Mate</h3>
-            <p>Una grúa divertida y leal que se convierte en el mejor amigo de McQueen.</p>
-        </article>
+            <article class="dato">
+                <strong>Título:</strong>
+                <p>Cars</p>
+            </article>
 
-        <article class="tarjeta">
-            <h3>Sally</h3>
-            <p>Un automóvil Porsche que vive en Radiador Springs.</p>
-        </article>
+            <article class="dato">
+                <strong>Año de estreno:</strong>
+                <p>2006</p>
+            </article>
 
-        <article class="tarjeta">
-            <h3>Doc Hudson</h3>
-            <p>Un automóvil legendario que ayuda a McQueen a aprender.</p>
-        </article>
+            <article class="dato">
+                <strong>Estudio:</strong>
+                <p>Pixar Animation Studios</p>
+            </article>
+
+            <article class="dato">
+                <strong>Distribución:</strong>
+                <p>Walt Disney Pictures</p>
+            </article>
+
+            <article class="dato">
+                <strong>Director:</strong>
+                <p>John Lasseter</p>
+            </article>
+
+            <article class="dato">
+                <strong>Género:</strong>
+                <p>Animación, aventura y comedia</p>
+            </article>
+
+        </div>
     </section>
 
-    <h2>Datos de la película</h2>
-    <p><strong>Estreno:</strong> 2006</p>
-    <p><strong>Estudio:</strong> Pixar Animation Studios</p>
-    <p><strong>Director:</strong> John Lasseter</p>
-    <p><strong>Género:</strong> Animación, aventura y comedia</p>
+    <section>
+        <h2>Sinopsis completa</h2>
+
+        <div class="seccion">
+            <p>
+                Rayo McQueen es un automóvil de carreras novato que
+                busca alcanzar la fama y ganar la Copa Pistón.
+                Su personalidad competitiva hace que muchas veces
+                piense solamente en sí mismo.
+            </p>
+
+            <p>
+                Durante su viaje a California para participar en
+                una carrera decisiva, termina perdido en Radiador
+                Springs. Allí conoce a Mate, Sally Carrera, Doc
+                Hudson y muchos otros habitantes.
+            </p>
+
+            <p>
+                Al principio, Rayo solamente quiere salir del pueblo,
+                pero poco a poco comienza a formar amistades y a
+                descubrir lo importante que es ayudar a los demás.
+            </p>
+
+            <p>
+                Finalmente, comprende que ganar no lo es todo y que
+                las experiencias y amistades que encuentra durante
+                el camino son mucho más valiosas.
+            </p>
+        </div>
+
+        <img class="imagen" src="imagenes/cars1-sinopsis.jpeg" alt="Escena de Cars 1">
+    </section>
+
+    <section>
+        <h2>Personajes principales</h2>
+
+        <div class="tarjetas">
+
+            <article class="tarjeta">
+                <img src="imagenes/mate.jpeg" alt="Mate">
+                <h3>Mate</h3>
+                <p>
+                    Una grúa amigable y divertida. Se convierte
+                    en el mejor amigo de Rayo McQueen.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <img src="imagenes/sally.jpeg" alt="Sally Carrera">
+                <h3>Sally Carrera</h3>
+                <p>
+                    Una elegante Porsche que vive en Radiador
+                    Springs y ayuda a Rayo a cambiar su forma
+                    de ver la vida.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <img src="imagenes/doc-hudson.jpeg" alt="Doc Hudson">
+                <h3>Doc Hudson</h3>
+                <p>
+                    Un antiguo campeón de carreras que se
+                    convierte en una figura importante para Rayo.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>El mensaje de Cars 1</h2>
+
+        <div class="seccion">
+            <p>
+                La película enseña que el éxito no solamente se
+                mide por los premios o reconocimientos que una
+                persona consigue.
+            </p>
+
+            <p>
+                También nos recuerda que debemos valorar a nuestros
+                amigos, aprender de nuestros errores y ayudar a
+                quienes nos rodean.
+            </p>
+
+            <h3>Lecciones importantes</h3>
+
+            <ul>
+                <li>La amistad es más importante que la competencia.</li>
+                <li>Siempre podemos aprender de los demás.</li>
+                <li>La humildad nos ayuda a crecer.</li>
+                <li>El trabajo en equipo puede llevarnos muy lejos.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Curiosidades de Cars 1</h2>
+
+        <div class="dato">
+            <strong>Curiosidad 1:</strong>
+            Rayo McQueen lleva el número 95, en referencia
+            al año en que se estrenó Toy Story (1995).
+        </div>
+
+        <div class="dato">
+            <strong>Curiosidad 2:</strong>
+            La película está inspirada visualmente en paisajes
+            y carreteras de Estados Unidos.
+        </div>
+
+        <div class="dato">
+            <strong>Curiosidad 3:</strong>
+            Cars fue nominada al Óscar a mejor película animada.
+        </div>
+    </section>
+
+    <section>
+        <h2>Continúa la aventura</h2>
+
+        <div class="seccion">
+            <p>
+                Después de conocer el inicio de la historia,
+                descubre lo que sucede cuando Rayo y Mate
+                viajan alrededor del mundo.
+            </p>
+
+            <a class="boton" href="cars2.html">Continuar con Cars 2</a>
+            <a class="boton" href="personajes.html">Ver personajes</a>
+        </div>
+    </section>
 
 </main>
 
 <footer>
-    <p>© 2026 Universo Cars | Cars 1</p>
+    <h3>UNIVERSO CARS</h3>
+    <p>Cars 1 | El comienzo de la aventura</p>
+    <p>Proyecto educativo de diseño y desarrollo web.</p>
 </footer>
 
 </body>

@@ -2,176 +2,204 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Universo Cars</title>
-
-<style>
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #171717;
-    color: white;
-}
-
-header {
-    background: linear-gradient(135deg, #a90000, #ef2929);
-    text-align: center;
-    padding: 25px;
-}
-
-.logo {
-    width: 230px;
-    height: 120px;
-    object-fit: contain;
-}
-
-nav {
-    background: #080808;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    display: inline-block;
-    color: #ffd21c;
-    background: #292929;
-    padding: 12px 20px;
-    margin: 5px;
-    border-radius: 8px;
-    text-decoration: none;
-}
-
-nav a:hover, nav .activo {
-    background: #a90000;
-    color: white;
-}
-
-main {
-    padding: 30px 20px;
-    text-align: center;
-}
-
-h2 {
-    color: #ffd21c;
-}
-
-.peliculas {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.tarjeta {
-    background: #292929;
-    width: 280px;
-    padding: 15px;
-    border-radius: 12px;
-    transition: transform 0.3s;
-}
-
-.tarjeta:hover {
-    transform: translateY(-6px);
-}
-
-.tarjeta img {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.tarjeta h3 {
-    color: #ffd21c;
-}
-
-.tarjeta a {
-    display: inline-block;
-    background: #a90000;
-    color: white;
-    text-decoration: none;
-    padding: 11px 18px;
-    border-radius: 7px;
-}
-
-footer {
-    background: #080808;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-}
-
-@media(max-width: 600px) {
-    .logo {
-        width: 180px;
-    }
-
-    nav a {
-        padding: 10px;
-    }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre el universo de Cars: películas, personajes, aventuras y curiosidades.">
+    <title>Universo Cars | Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
 <header>
-    <img src="imagenes/logo-cars.jpeg" alt="Logo de Cars" class="logo">
-    <h1>🏁 Universo Cars</h1>
-    <p>El mundo de Rayo McQueen y sus amigos</p>
+    <img src="imagenes/logo-cars.jpeg" alt="Logo de Cars">
+    <h1>UNIVERSO CARS</h1>
+    <p>Velocidad, amistad y grandes aventuras sobre ruedas</p>
 </header>
 
 <nav>
-    <a href="index.html" class="activo">Inicio</a>
+    <a href="index.html">Inicio</a>
     <a href="cars1.html">Cars 1</a>
     <a href="cars2.html">Cars 2</a>
     <a href="cars3.html">Cars 3</a>
+    <a href="personajes.html">Personajes</a>
 </nav>
 
 <main>
 
-    <h2>Bienvenido al Universo Cars</h2>
+    <section>
+        <h2>¡Bienvenido al mundo de Cars!</h2>
 
-    <p>
-        Descubre las aventuras de Rayo McQueen, Mate y todos sus amigos.
-        Conoce las tres películas de esta increíble saga de Pixar.
-    </p>
+        <img class="portada" src="imagenes/images.jpeg" alt="Rayo McQueen">
 
-    <section class="peliculas">
+        <div class="seccion">
+            <p>
+                ¡Prepárate para acelerar! Bienvenido a Universo Cars,
+                un espacio dedicado a una de las historias animadas
+                más emocionantes de Disney y Pixar.
+            </p>
 
-        <article class="tarjeta">
-            <img src="imagenes/images.jpeg" alt="Cars 1">
-            <h3>Cars (2006)</h3>
-            <p>El comienzo de la historia de Rayo McQueen en Radiador Springs.</p>
-            <a href="cars1.html">Conocer Cars 1</a>
-        </article>
+            <p>
+                Aquí podrás conocer las aventuras de Rayo McQueen,
+                un automóvil de carreras que descubre que la vida
+                no solamente se trata de ganar, sino también de
+                encontrar amigos, aprender de los demás y nunca
+                rendirse ante los obstáculos.
+            </p>
 
-        <article class="tarjeta">
-            <img src="imagenes/cars2-principal.jpeg" alt="Cars 2">
-            <h3>Cars 2 (2011)</h3>
-            <p>Una aventura internacional llena de carreras y espionaje.</p>
-            <a href="cars2.html">Conocer Cars 2</a>
-        </article>
+            <p>
+                Explora las películas, descubre a sus personajes,
+                conoce sus historias y acompaña a tus corredores
+                favoritos en cada aventura.
+            </p>
+        </div>
+    </section>
 
-        <article class="tarjeta">
-            <img src="imagenes/cars3.jpeg" alt="Cars 3">
-            <h3>Cars 3 (2017)</h3>
-            <p>Rayo McQueen se enfrenta a una nueva generación de corredores.</p>
-            <a href="cars3.html">Conocer Cars 3</a>
-        </article>
+    <section>
+        <h2>Las películas de Cars</h2>
 
+        <p>
+            La historia de Cars está formada por tres películas
+            principales que muestran la evolución de Rayo McQueen
+            y de todos sus amigos.
+        </p>
+
+        <div class="tarjetas">
+
+            <article class="tarjeta">
+                <img src="imagenes/cars1-sinopsis.jpeg" alt="Cars 1">
+
+                <h3>Cars (2006)</h3>
+
+                <p>
+                    Rayo McQueen llega por accidente a Radiador Springs,
+                    donde conoce nuevos amigos y descubre el verdadero
+                    significado de la amistad.
+                </p>
+
+                <a class="boton" href="cars1.html">Explorar Cars 1</a>
+            </article>
+
+            <article class="tarjeta">
+                <img src="imagenes/cars2-principal.jpeg" alt="Cars 2">
+
+                <h3>Cars 2 (2011)</h3>
+
+                <p>
+                    Rayo y Mate viajan por el mundo para participar
+                    en el Gran Prix Mundial. Una aventura llena de
+                    carreras, espionaje y sorpresas.
+                </p>
+
+                <a class="boton" href="cars2.html">Explorar Cars 2</a>
+            </article>
+
+            <article class="tarjeta">
+                <img src="imagenes/cars3.jpeg" alt="Cars 3">
+
+                <h3>Cars 3 (2017)</h3>
+
+                <p>
+                    Rayo se enfrenta a una nueva generación de
+                    corredores y descubre que todavía tiene mucho
+                    que aprender y enseñar.
+                </p>
+
+                <a class="boton" href="cars3.html">Explorar Cars 3</a>
+            </article>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Personajes que hacen especial esta historia</h2>
+
+        <div class="tarjetas">
+
+            <article class="tarjeta">
+                <img src="imagenes/mate.jpeg" alt="Mate">
+                <h3>Mate</h3>
+                <p>
+                    El mejor amigo de Rayo. Es divertido, leal
+                    y siempre está dispuesto a ayudar.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <img src="imagenes/sally.jpeg" alt="Sally">
+                <h3>Sally Carrera</h3>
+                <p>
+                    Una amiga especial de Rayo que disfruta
+                    la tranquilidad de Radiador Springs.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <img src="imagenes/doc-hudson.jpeg" alt="Doc Hudson">
+                <h3>Doc Hudson</h3>
+                <p>
+                    Un antiguo campeón que comparte su experiencia
+                    y conocimientos con Rayo.
+                </p>
+            </article>
+
+        </div>
+
+        <a class="boton" href="personajes.html">Conocer todos los personajes</a>
+    </section>
+
+    <section>
+        <h2>Radiador Springs: un lugar especial</h2>
+
+        <div class="seccion">
+            <p>
+                Radiador Springs es el pequeño pueblo donde Rayo
+                McQueen conoce a algunos de sus mejores amigos.
+                Es un lugar inspirado en las carreteras y paisajes
+                de la histórica Ruta 66 de Estados Unidos.
+            </p>
+
+            <p>
+                Sus habitantes le enseñan a Rayo que las personas
+                que conocemos durante el camino pueden cambiar
+                nuestra forma de ver el mundo.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>¿Sabías que...?</h2>
+
+        <div class="dato">
+            <strong>Curiosidad 1:</strong>
+            Rayo McQueen tiene el número 95, un detalle que
+            aparece en las tres películas.
+        </div>
+
+        <div class="dato">
+            <strong>Curiosidad 2:</strong>
+            La primera película de Cars se estrenó en el año 2006.
+        </div>
+
+        <div class="dato">
+            <strong>Curiosidad 3:</strong>
+            Radiador Springs está inspirado en lugares de la
+            famosa Ruta 66.
+        </div>
+
+        <div class="dato">
+            <strong>Curiosidad 4:</strong>
+            La historia de Cars muestra temas como la amistad,
+            la perseverancia y el trabajo en equipo.
+        </div>
     </section>
 
 </main>
 
 <footer>
-    <p>© 2026 Universo Cars | Proyecto escolar</p>
+    <h3>UNIVERSO CARS</h3>
+    <p>Una aventura que nunca deja de acelerar.</p>
+    <p>Proyecto educativo de diseño y desarrollo web.</p>
 </footer>
 
 </body>

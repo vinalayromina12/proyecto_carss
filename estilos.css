@@ -1,0 +1,296 @@
+
+/* =================================
+   UNIVERSO CARS - DISEÑO GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111111;
+    color: #f5f5f5;
+    line-height: 1.7;
+}
+
+/* ENCABEZADO */
+
+header {
+    min-height: 300px;
+    padding: 35px 20px;
+    text-align: center;
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.85)),
+        linear-gradient(120deg, #850000, #ed1c24, #580000);
+    border-bottom: 5px solid #ffd21c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 115px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 43px;
+    color: #ffd21c;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 5px #000;
+}
+
+header p {
+    font-size: 17px;
+    color: white;
+}
+
+/* MENÚ */
+
+nav {
+    background: #080808;
+    padding: 17px 10px;
+    text-align: center;
+    border-bottom: 2px solid #a80000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 12px;
+    padding: 10px 13px;
+    display: inline-block;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+nav a:hover {
+    background: #ed1c24;
+    color: #ffd21c;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    max-width: 1150px;
+    width: 92%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+h2 {
+    color: #ffd21c;
+    font-size: 29px;
+    margin: 25px 0 15px;
+    border-left: 5px solid #ed1c24;
+    padding-left: 13px;
+}
+
+h3 {
+    color: #ffd21c;
+    margin: 12px 0;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* IMÁGENES GRANDES */
+
+.portada {
+    width: 100%;
+    max-height: 470px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #ed1c24;
+    margin: 20px 0;
+    box-shadow: 0 5px 20px #000;
+}
+
+.imagen {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+/* SECCIONES */
+
+.seccion {
+    background: #202020;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 12px;
+    border-left: 5px solid #ed1c24;
+    box-shadow: 0 5px 15px rgba(0,0,0,.35);
+}
+
+.seccion p {
+    color: #dddddd;
+}
+
+/* TARJETAS */
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin: 25px 0;
+}
+
+.tarjeta {
+    background: #222222;
+    border: 1px solid #444;
+    border-radius: 13px;
+    padding: 16px;
+    overflow: hidden;
+    transition: transform .3s, border .3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+    border: 1px solid #ffd21c;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.tarjeta p {
+    color: #dddddd;
+}
+
+.boton {
+    display: inline-block;
+    padding: 11px 20px;
+    background: #ed1c24;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 7px;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.boton:hover {
+    background: #ffd21c;
+    color: #111;
+}
+
+/* DATOS Y CURIOSIDADES */
+
+.dato {
+    background: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom: 3px solid #ffd21c;
+    margin-bottom: 15px;
+}
+
+.dato strong {
+    color: #ffd21c;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    background: #080808;
+    border-top: 4px solid #ed1c24;
+    text-align: center;
+    padding: 30px 15px;
+    color: #cccccc;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* GALERÍA DE PERSONAJES */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.personaje {
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 13px;
+    padding: 15px;
+    transition: .3s;
+}
+
+.personaje:hover {
+    transform: translateY(-6px);
+    border-color: #ffd21c;
+}
+
+.personaje img {
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
+    background: #171717;
+    border-radius: 9px;
+}
+
+.personaje h3 {
+    color: #ffd21c;
+}
+
+.personaje p {
+    color: #ddd;
+}
+
+/* DISEÑO RESPONSIVO */
+
+@media (max-width: 800px) {
+    .tarjetas,
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 550px) {
+    .tarjetas,
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        margin: 3px;
+        padding: 8px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    main {
+        width: 94%;
+    }
+}

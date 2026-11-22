@@ -2,186 +2,248 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cars 2 - Universo Cars</title>
-
-<style>
-* { box-sizing: border-box; }
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #171717;
-    color: white;
-}
-
-header {
-    background: linear-gradient(135deg, #a90000, #ef2929);
-    text-align: center;
-    padding: 25px;
-}
-
-.logo {
-    width: 200px;
-    height: 110px;
-    object-fit: contain;
-}
-
-nav {
-    background: #080808;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    display: inline-block;
-    color: #ffd21c;
-    background: #292929;
-    padding: 12px 20px;
-    margin: 5px;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-nav a:hover, nav .activo {
-    background: #a90000;
-    color: white;
-}
-
-main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 25px;
-}
-
-h2 { color: #ffd21c; }
-
-.portada {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.contenido {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 25px;
-}
-
-.contenido img {
-    width: 350px;
-    max-width: 100%;
-    border-radius: 12px;
-}
-
-.texto {
-    flex: 1;
-    min-width: 250px;
-    line-height: 1.7;
-}
-
-.personajes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.tarjeta {
-    background: #292929;
-    padding: 18px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.tarjeta h3 { color: #ffd21c; }
-
-footer {
-    background: #080808;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars 2 | Universo Cars</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
 <header>
-    <img src="imagenes/logo-cars.jpeg" alt="Logo de Cars" class="logo">
-    <h1>Cars 2: Una misión internacional</h1>
-    <p>La segunda aventura de Rayo McQueen</p>
+    <img src="imagenes/logo-cars.jpeg" alt="Logo de Cars">
+    <h1>CARS 2</h1>
+    <p>Velocidad, espionaje y aventuras alrededor del mundo</p>
 </header>
 
 <nav>
     <a href="index.html">Inicio</a>
     <a href="cars1.html">Cars 1</a>
-    <a href="cars2.html" class="activo">Cars 2</a>
+    <a href="cars2.html">Cars 2</a>
     <a href="cars3.html">Cars 3</a>
+    <a href="personajes.html">Personajes</a>
 </nav>
 
 <main>
 
-    <h2>Cars 2 (2011)</h2>
+    <section>
+        <h2>¡Una aventura internacional!</h2>
 
-    <img src="imagenes/cars2-principal.jpeg" alt="Cars 2" class="portada">
+        <img class="portada" src="imagenes/cars2-principal.jpeg" alt="Cars 2">
 
-    <section class="contenido">
-        <img src="imagenes/cars2-sinopsis.jpeg" alt="Personajes de Cars 2">
-
-        <div class="texto">
-            <h2>Sinopsis</h2>
+        <div class="seccion">
             <p>
-                Rayo McQueen regresa para participar en el Gran Prix
-                Mundial, una competencia que reúne a los mejores
-                automóviles del mundo.
+                Cars 2 es la segunda película de la saga, estrenada
+                en 2011 por Disney y Pixar. En esta ocasión, Rayo
+                McQueen y Mate salen de Radiador Springs para
+                participar en una competencia internacional.
             </p>
+
             <p>
-                Su amigo Mate lo acompaña en este viaje y termina
-                involucrado en una aventura de espionaje internacional.
-                Juntos descubrirán nuevos lugares y vivirán momentos
-                llenos de acción y diversión.
+                La historia combina las emocionantes carreras con
+                una misión de espionaje que lleva a Mate a vivir
+                una aventura completamente inesperada.
             </p>
         </div>
     </section>
 
-    <h2>Personajes principales</h2>
+    <section>
+        <h2>Ficha técnica</h2>
 
-    <section class="personajes">
-        <article class="tarjeta">
-            <h3>Rayo McQueen</h3>
-            <p>El famoso auto de carreras que participa en el Gran Prix Mundial.</p>
-        </article>
+        <div class="tarjetas">
 
-        <article class="tarjeta">
-            <h3>Mate</h3>
-            <p>El mejor amigo de McQueen, que se convierte en parte de una misión secreta.</p>
-        </article>
+            <article class="dato">
+                <strong>Título:</strong>
+                <p>Cars 2</p>
+            </article>
 
-        <article class="tarjeta">
-            <h3>Finn McMissile</h3>
-            <p>Un elegante automóvil espía que investiga una conspiración.</p>
-        </article>
+            <article class="dato">
+                <strong>Año de estreno:</strong>
+                <p>2011</p>
+            </article>
 
-        <article class="tarjeta">
-            <h3>Holley Shiftwell</h3>
-            <p>Una agente espía que trabaja junto a Finn y Mate.</p>
-        </article>
+            <article class="dato">
+                <strong>Estudio:</strong>
+                <p>Pixar Animation Studios</p>
+            </article>
+
+            <article class="dato">
+                <strong>Distribución:</strong>
+                <p>Walt Disney Pictures</p>
+            </article>
+
+            <article class="dato">
+                <strong>Director:</strong>
+                <p>John Lasseter</p>
+            </article>
+
+            <article class="dato">
+                <strong>Género:</strong>
+                <p>Animación, aventura y comedia</p>
+            </article>
+
+        </div>
     </section>
 
-    <h2>Datos de la película</h2>
-    <p><strong>Estreno:</strong> 2011</p>
-    <p><strong>Estudio:</strong> Pixar Animation Studios</p>
-    <p><strong>Director:</strong> John Lasseter</p>
-    <p><strong>Género:</strong> Animación, aventura y comedia</p>
+    <section>
+        <h2>Sinopsis completa</h2>
+
+        <div class="seccion">
+            <p>
+                Rayo McQueen recibe una invitación para competir
+                en el Gran Prix Mundial, una carrera organizada
+                en diferentes ciudades del mundo.
+            </p>
+
+            <p>
+                Mate acompaña a Rayo durante el viaje. Sin embargo,
+                termina involucrado en una misión secreta cuando
+                conoce a Finn McMissile y Holley Shiftwell,
+                dos agentes que investigan un misterioso plan.
+            </p>
+
+            <p>
+                Mientras Rayo intenta demostrar que puede competir
+                con los mejores corredores, Mate descubre que su
+                personalidad y sus habilidades pueden ser útiles
+                para ayudar a resolver el misterio.
+            </p>
+
+            <p>
+                La aventura lleva a los protagonistas a lugares
+                como Tokio, Italia, París y Londres, donde deberán
+                confiar en sus amigos para superar los desafíos.
+            </p>
+        </div>
+
+        <img class="imagen" src="imagenes/cars2-sinopsis.jpeg" alt="Escena de Cars 2">
+    </section>
+
+    <section>
+        <h2>El Gran Prix Mundial</h2>
+
+        <div class="seccion">
+            <p>
+                El Gran Prix Mundial es una competencia internacional
+                que reúne a corredores de diferentes países.
+                Su objetivo es demostrar quién es el automóvil
+                más veloz en distintas pistas.
+            </p>
+
+            <ul>
+                <li>Tokio, Japón.</li>
+                <li>Porto Corsa, Italia.</li>
+                <li>Londres, Reino Unido.</li>
+            </ul>
+
+            <p>
+                Cada escenario presenta nuevos retos, paisajes
+                y competidores para Rayo McQueen.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Personajes destacados</h2>
+
+        <div class="tarjetas">
+
+            <article class="tarjeta">
+                <img src="imagenes/mate.jpeg" alt="Mate">
+                <h3>Mate</h3>
+                <p>
+                    El mejor amigo de Rayo. Se convierte
+                    accidentalmente en parte de una misión
+                    internacional de espionaje.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <img src="imagenes/sally.jpeg" alt="Sally">
+                <h3>Sally Carrera</h3>
+                <p>
+                    La amiga especial de Rayo, quien forma
+                    parte de su vida en Radiador Springs.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <img src="imagenes/guido.jpeg" alt="Guido">
+                <h3>Guido</h3>
+                <p>
+                    El pequeño automóvil italiano que destaca
+                    por su rapidez al cambiar neumáticos.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>La importancia de la amistad</h2>
+
+        <div class="seccion">
+            <p>
+                Cars 2 muestra que la amistad necesita confianza,
+                comprensión y respeto. Mate aprende que no necesita
+                cambiar su personalidad para ser importante.
+            </p>
+
+            <p>
+                También enseña que debemos valorar a las personas
+                que nos acompañan, incluso cuando tienen formas
+                diferentes de pensar y actuar.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Curiosidades de Cars 2</h2>
+
+        <div class="dato">
+            <strong>Curiosidad 1:</strong>
+            Cars 2 se estrenó cinco años después de la primera película.
+        </div>
+
+        <div class="dato">
+            <strong>Curiosidad 2:</strong>
+            La película presenta escenarios inspirados en ciudades
+            de diferentes países.
+        </div>
+
+        <div class="dato">
+            <strong>Curiosidad 3:</strong>
+            Mate tiene un papel central en la historia de espionaje.
+        </div>
+
+        <div class="dato">
+            <strong>Curiosidad 4:</strong>
+            La película mezcla las carreras automovilísticas
+            con elementos de las historias de agentes secretos.
+        </div>
+    </section>
+
+    <section>
+        <h2>¿Qué sigue después?</h2>
+
+        <div class="seccion">
+            <p>
+                La aventura continúa con Cars 3, donde Rayo
+                McQueen tendrá que enfrentarse a una nueva
+                generación de corredores.
+            </p>
+
+            <a class="boton" href="cars3.html">Continuar con Cars 3</a>
+            <a class="boton" href="personajes.html">Ver personajes</a>
+        </div>
+    </section>
 
 </main>
 
 <footer>
-    <p>© 2026 Universo Cars | Cars 2</p>
+    <h3>UNIVERSO CARS</h3>
+    <p>Cars 2 | Una aventura alrededor del mundo</p>
+    <p>Proyecto educativo de diseño y desarrollo web.</p>
 </footer>
 
 </body>

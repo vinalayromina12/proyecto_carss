@@ -2,186 +2,258 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cars 3 - Universo Cars</title>
-
-<style>
-* { box-sizing: border-box; }
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #171717;
-    color: white;
-}
-
-header {
-    background: linear-gradient(135deg, #a90000, #ef2929);
-    text-align: center;
-    padding: 25px;
-}
-
-.logo {
-    width: 200px;
-    height: 110px;
-    object-fit: contain;
-}
-
-nav {
-    background: #080808;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    display: inline-block;
-    color: #ffd21c;
-    background: #292929;
-    padding: 12px 20px;
-    margin: 5px;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-nav a:hover, nav .activo {
-    background: #a90000;
-    color: white;
-}
-
-main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 25px;
-}
-
-h2 { color: #ffd21c; }
-
-.portada {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.contenido {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 25px;
-}
-
-.contenido img {
-    width: 350px;
-    max-width: 100%;
-    border-radius: 12px;
-}
-
-.texto {
-    flex: 1;
-    min-width: 250px;
-    line-height: 1.7;
-}
-
-.personajes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.tarjeta {
-    background: #292929;
-    padding: 18px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.tarjeta h3 { color: #ffd21c; }
-
-footer {
-    background: #080808;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars 3 | Universo Cars</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
 <header>
-    <img src="imagenes/logo-cars.jpeg" alt="Logo de Cars" class="logo">
-    <h1>Cars 3: El regreso del campeón</h1>
-    <p>Una nueva generación de corredores</p>
+    <img src="imagenes/logo-cars.jpeg" alt="Logo de Cars">
+    <h1>CARS 3</h1>
+    <p>La experiencia nunca pasa de moda</p>
 </header>
 
 <nav>
     <a href="index.html">Inicio</a>
     <a href="cars1.html">Cars 1</a>
     <a href="cars2.html">Cars 2</a>
-    <a href="cars3.html" class="activo">Cars 3</a>
+    <a href="cars3.html">Cars 3</a>
+    <a href="personajes.html">Personajes</a>
 </nav>
 
 <main>
 
-    <h2>Cars 3 (2017)</h2>
+    <section>
+        <h2>Una nueva generación de corredores</h2>
 
-    <img src="imagenes/cars3.jpeg" alt="Cars 3" class="portada">
+        <img class="portada" src="imagenes/cars3.jpeg" alt="Cars 3">
 
-    <section class="contenido">
-        <img src="imagenes/cars3-sinopsis.jpeg" alt="Personajes de Cars 3">
-
-        <div class="texto">
-            <h2>Sinopsis</h2>
+        <div class="seccion">
             <p>
-                Rayo McQueen debe enfrentarse a una nueva generación
-                de automóviles de carreras mucho más rápidos y modernos.
-                Uno de sus principales rivales es Jackson Storm.
+                Cars 3 es la tercera película de la saga de Disney
+                y Pixar, estrenada en 2017. En esta historia,
+                Rayo McQueen se enfrenta a uno de los mayores
+                desafíos de su carrera.
             </p>
+
             <p>
-                Con la ayuda de Cruz Ramírez, McQueen comienza un
-                entrenamiento especial para demostrar que la experiencia,
-                la perseverancia y la pasión también pueden llevarlo
-                a alcanzar sus sueños.
+                Los nuevos automóviles de carreras utilizan
+                tecnología avanzada y entrenamientos modernos.
+                Rayo tendrá que demostrar que la experiencia,
+                la disciplina y la pasión siguen siendo
+                importantes dentro de las competencias.
             </p>
         </div>
     </section>
 
-    <h2>Personajes principales</h2>
+    <section>
+        <h2>Ficha técnica</h2>
 
-    <section class="personajes">
-        <article class="tarjeta">
-            <h3>Rayo McQueen</h3>
-            <p>El corredor que busca demostrar que todavía puede competir.</p>
-        </article>
+        <div class="tarjetas">
 
-        <article class="tarjeta">
-            <h3>Cruz Ramírez</h3>
-            <p>Una entrenadora que ayuda a McQueen a recuperar su confianza.</p>
-        </article>
+            <article class="dato">
+                <strong>Título:</strong>
+                <p>Cars 3</p>
+            </article>
 
-        <article class="tarjeta">
-            <h3>Jackson Storm</h3>
-            <p>Un corredor moderno y veloz que representa a la nueva generación.</p>
-        </article>
+            <article class="dato">
+                <strong>Año de estreno:</strong>
+                <p>2017</p>
+            </article>
 
-        <article class="tarjeta">
-            <h3>Smokey</h3>
-            <p>Un antiguo amigo de Doc Hudson que ayuda a McQueen a entrenar.</p>
-        </article>
+            <article class="dato">
+                <strong>Estudio:</strong>
+                <p>Pixar Animation Studios</p>
+            </article>
+
+            <article class="dato">
+                <strong>Distribución:</strong>
+                <p>Walt Disney Pictures</p>
+            </article>
+
+            <article class="dato">
+                <strong>Director:</strong>
+                <p>Brian Fee</p>
+            </article>
+
+            <article class="dato">
+                <strong>Género:</strong>
+                <p>Animación, aventura y comedia</p>
+            </article>
+
+        </div>
     </section>
 
-    <h2>Datos de la película</h2>
-    <p><strong>Estreno:</strong> 2017</p>
-    <p><strong>Estudio:</strong> Pixar Animation Studios</p>
-    <p><strong>Director:</strong> Brian Fee</p>
-    <p><strong>Género:</strong> Animación, aventura y comedia</p>
+    <section>
+        <h2>Sinopsis completa</h2>
+
+        <div class="seccion">
+            <p>
+                Después de muchos años siendo uno de los corredores
+                más importantes de la Copa Pistón, Rayo McQueen
+                comienza a enfrentarse a una nueva generación
+                de automóviles más rápidos y tecnológicos.
+            </p>
+
+            <p>
+                Entre ellos se encuentra Jackson Storm, un corredor
+                que representa un gran reto para Rayo. Después
+                de una competencia difícil, Rayo comprende que
+                necesita cambiar su manera de entrenar.
+            </p>
+
+            <p>
+                En ese momento conoce a Cruz Ramírez, una entrenadora
+                que lo ayuda a prepararse y recuperar la confianza.
+                Juntos descubren que aprender de los demás puede
+                abrir nuevas oportunidades.
+            </p>
+
+            <p>
+                Rayo también recuerda las enseñanzas de Doc Hudson
+                y comprende que el legado de un campeón no consiste
+                solamente en ganar carreras, sino también en
+                inspirar a otros.
+            </p>
+        </div>
+
+        <img class="imagen" src="imagenes/cars3-sinopsis.jpeg" alt="Escena de Cars 3">
+    </section>
+
+    <section>
+        <h2>Personajes principales</h2>
+
+        <div class="tarjetas">
+
+            <article class="tarjeta">
+                <img src="imagenes/cruz-ramirez.jpeg" alt="Cruz Ramírez">
+                <h3>Cruz Ramírez</h3>
+                <p>
+                    Es una entrenadora que ayuda a Rayo McQueen
+                    a mejorar sus habilidades. También descubre
+                    su propio potencial como corredora.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <img src="imagenes/jackson-storm.jpeg" alt="Jackson Storm">
+                <h3>Jackson Storm</h3>
+                <p>
+                    Es un corredor moderno que utiliza tecnología
+                    avanzada y representa a la nueva generación
+                    de competidores.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <img src="imagenes/doc-hudson.jpeg" alt="Doc Hudson">
+                <h3>Doc Hudson</h3>
+                <p>
+                    Aunque ya no está presente durante los
+                    acontecimientos principales, sus enseñanzas
+                    siguen acompañando a Rayo.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>El entrenamiento de Rayo McQueen</h2>
+
+        <div class="seccion">
+            <p>
+                Durante la película, Rayo descubre que no puede
+                depender únicamente de su velocidad. Necesita
+                trabajar en su técnica, resistencia y capacidad
+                para adaptarse a los cambios.
+            </p>
+
+            <p>
+                Cruz Ramírez le presenta nuevas formas de
+                entrenamiento y juntos aprenden que cada
+                experiencia puede convertirse en una oportunidad.
+            </p>
+
+            <ul>
+                <li>Aprender nuevas técnicas de carrera.</li>
+                <li>Mejorar la confianza personal.</li>
+                <li>Adaptarse a los cambios tecnológicos.</li>
+                <li>Trabajar en equipo y compartir conocimientos.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Mensajes y enseñanzas</h2>
+
+        <div class="dato">
+            <strong>La perseverancia:</strong>
+            Nunca debemos rendirnos cuando aparecen nuevos desafíos.
+        </div>
+
+        <div class="dato">
+            <strong>La experiencia:</strong>
+            Los conocimientos adquiridos con el tiempo tienen un
+            gran valor.
+        </div>
+
+        <div class="dato">
+            <strong>La superación:</strong>
+            Siempre podemos aprender, mejorar y descubrir
+            nuevas habilidades.
+        </div>
+
+        <div class="dato">
+            <strong>El trabajo en equipo:</strong>
+            Ayudar a otras personas también es una forma de triunfar.
+        </div>
+    </section>
+
+    <section>
+        <h2>Curiosidades de Cars 3</h2>
+
+        <div class="dato">
+            <strong>Curiosidad 1:</strong>
+            Cars 3 se estrenó en 2017, seis años después de Cars 2.
+        </div>
+
+        <div class="dato">
+            <strong>Curiosidad 2:</strong>
+            Cruz Ramírez tiene un papel muy importante en el
+            desarrollo de la historia.
+        </div>
+
+        <div class="dato">
+            <strong>Curiosidad 3:</strong>
+            La película aborda el cambio generacional en el
+            mundo de las carreras.
+        </div>
+    </section>
+
+    <section>
+        <h2>Explora más de Universo Cars</h2>
+
+        <div class="seccion">
+            <p>
+                ¿Quieres conocer a todos los automóviles que
+                forman parte de esta increíble historia?
+            </p>
+
+            <a class="boton" href="personajes.html">Conocer personajes</a>
+            <a class="boton" href="index.html">Volver al inicio</a>
+        </div>
+    </section>
 
 </main>
 
 <footer>
-    <p>© 2026 Universo Cars | Cars 3</p>
+    <h3>UNIVERSO CARS</h3>
+    <p>Cars 3 | Una nueva generación de campeones</p>
+    <p>Proyecto educativo de diseño y desarrollo web.</p>
 </footer>
 
 </body>
