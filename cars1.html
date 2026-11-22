@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cars 1 - Universo Cars</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #171717;
+    color: white;
+}
+
+header {
+    background: linear-gradient(135deg, #a90000, #ef2929);
+    text-align: center;
+    padding: 25px;
+}
+
+.logo {
+    width: 200px;
+    height: 110px;
+    object-fit: contain;
+}
+
+nav {
+    background: #080808;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: #ffd21c;
+    background: #292929;
+    padding: 12px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+nav a:hover, nav .activo {
+    background: #a90000;
+    color: white;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px;
+}
+
+h2 { color: #ffd21c; }
+
+.portada {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.contenido {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.contenido img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.texto {
+    flex: 1;
+    min-width: 250px;
+    line-height: 1.7;
+}
+
+.personajes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta {
+    background: #292929;
+    padding: 18px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tarjeta h3 { color: #ffd21c; }
+
+footer {
+    background: #080808;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="imagenes/logo-cars.jpeg" alt="Logo de Cars" class="logo">
+    <h1>Cars: Una aventura sobre ruedas</h1>
+    <p>La primera película de la saga</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="cars1.html" class="activo">Cars 1</a>
+    <a href="cars2.html">Cars 2</a>
+    <a href="cars3.html">Cars 3</a>
+</nav>
+
+<main>
+
+    <h2>Cars (2006)</h2>
+
+    <img src="imagenes/images.jpeg" alt="Cars primera película" class="portada">
+
+    <section class="contenido">
+        <img src="imagenes/cars1-sinopsis.jpeg" alt="Personajes de Cars">
+
+        <div class="texto">
+            <h2>Sinopsis</h2>
+            <p>
+                Rayo McQueen es un automóvil de carreras que sueña con
+                convertirse en el campeón de la Copa Pistón. Durante
+                un viaje termina accidentalmente en el pequeño pueblo
+                de Radiador Springs.
+            </p>
+            <p>
+                Allí conoce a nuevos amigos que le enseñan que la
+                amistad, la humildad y el trabajo en equipo son
+                más importantes que ganar una carrera.
+            </p>
+        </div>
+    </section>
+
+    <h2>Personajes principales</h2>
+
+    <section class="personajes">
+        <article class="tarjeta">
+            <h3>Rayo McQueen</h3>
+            <p>Un auto de carreras rojo que quiere convertirse en campeón.</p>
+        </article>
+
+        <article class="tarjeta">
+            <h3>Mate</h3>
+            <p>Una grúa divertida y leal que se convierte en el mejor amigo de McQueen.</p>
+        </article>
+
+        <article class="tarjeta">
+            <h3>Sally</h3>
+            <p>Un automóvil Porsche que vive en Radiador Springs.</p>
+        </article>
+
+        <article class="tarjeta">
+            <h3>Doc Hudson</h3>
+            <p>Un automóvil legendario que ayuda a McQueen a aprender.</p>
+        </article>
+    </section>
+
+    <h2>Datos de la película</h2>
+    <p><strong>Estreno:</strong> 2006</p>
+    <p><strong>Estudio:</strong> Pixar Animation Studios</p>
+    <p><strong>Director:</strong> John Lasseter</p>
+    <p><strong>Género:</strong> Animación, aventura y comedia</p>
+
+</main>
+
+<footer>
+    <p>© 2026 Universo Cars | Cars 1</p>
+</footer>
+
+</body>
+</html>
